@@ -1,4 +1,4 @@
-{% set version = '1.5.4' %}
+{% set version = "1.5.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/zoib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/zoib/zoib_{{ version }}.tar.gz
-  sha256: 0ad4f442b0ad215b037f3a333641cc44e1f92bc3898d39e80af5251a222d1b82
+  sha256: 0ed9308b5c7a5a116e24426fea9b3f72a7c464ba5d04bc3bd6131976853bd546
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,12 +46,10 @@ test:
 about:
   home: https://www.r-project.org, https://www3.nd.edu/~fliu2/#tools
   license: GPL-3.0-or-later
-  summary: Fits beta regression and zero-or-one inflated beta regression and obtains Bayesian
-    Inference of the model via the Markov Chain Monte Carlo approach implemented in
-    JAGS.
+  summary: Fits beta regression and zero-or-one inflated beta regression and obtains Bayesian Inference of the model via the Markov Chain Monte Carlo approach implemented in JAGS.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
