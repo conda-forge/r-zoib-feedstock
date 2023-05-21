@@ -1,4 +1,4 @@
-{% set version = "1.5.5" %}
+{% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/zoib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/zoib/zoib_{{ version }}.tar.gz
-  sha256: 0ed9308b5c7a5a116e24426fea9b3f72a7c464ba5d04bc3bd6131976853bd546
+  sha256: 5274df23c6da6062a35cc1626b362d9ea5469f3331fc4effb3331a7ba594a4df
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
