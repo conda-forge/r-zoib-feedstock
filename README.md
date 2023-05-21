@@ -1,11 +1,11 @@
-About r-zoib
-============
+About r-zoib-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-zoib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.r-project.org, https://www3.nd.edu/~fliu2/#tools
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-zoib-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fits beta regression and zero-or-one inflated beta regression and obtains Bayesian Inference of the model via the Markov Chain Monte Carlo approach implemented in JAGS.
 
