@@ -1,6 +1,5 @@
 {% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-zoib
@@ -13,8 +12,7 @@ source:
   sha256: 5274df23c6da6062a35cc1626b362d9ea5469f3331fc4effb3331a7ba594a4df
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
